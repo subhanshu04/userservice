@@ -51,7 +51,6 @@ public class AuthController {
         }
         catch(Exception e){
             String msg = e.getMessage();
-            //throw new ApplicationException(msg);
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,msg);
         }
     }
